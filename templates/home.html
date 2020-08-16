@@ -3,7 +3,7 @@
 
 {% block content %}
 <h1>Madlibs</h1>
-<form action="/story">
+<!-- <form action="/story">
     {% for prompt in prompts %}
         <label for={{prompt}}>{{prompt}}: </label>
         <input type="text" name={{prompt}}>
@@ -11,5 +11,17 @@
         </br>
     {% endfor %}
     <button>Submit</button>
+</form> -->
+<form action="/fillin"> 
+<!-- <label for="stories">Choose a Story:</label> -->
+<p>Choose a Story:</p>
+<select>
+    <p>Choose a story</p>
+    <option value="story1">Story1</option>
+    <option value="story2">Story2</option>
+    <option value="story3">Story3</option>
+</select>
+
+<button type="submit" id="submit">Submit</button>
 </form>
 {% endblock %}
